@@ -123,25 +123,3 @@ Seguimos conventional commits:
 ## 🌱 Impacto Ambiental
 
 Este projeto visa conscientizar sobre emissões de carbono em transportes, promovendo escolhas mais sustentáveis como transporte público, bicicleta e caminhada.
-
-## 📄 Licença
-
-MIT - Veja LICENSE para detalhes.
-
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. Commit suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
-
-## 👥 Autores
-
-- **Equipe EcoTrip** - Desenvolvimento inicial
-
-## 🙏 Agradecimentos
-
-- IPCC e EPA pelos dados de emissões
-- Comunidade open source pelas ferramentas
-- Todos que se preocupam com o meio ambiente

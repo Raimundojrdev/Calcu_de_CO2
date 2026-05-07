@@ -1,0 +1,37 @@
+{
+  "name": "ecotrip",
+  "version": "1.0.0",
+  "description": "Calculadora de impacto ambiental para viagens",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --port 3000",
+    "build": "echo 'No build step required for vanilla JS'",
+    "lint": "echo 'Add ESLint for linting'",
+    "test": "echo 'Add testing framework for unit tests'"
+  },
+  "keywords": [
+    "carbon",
+    "calculator",
+    "ecology",
+    "sustainability",
+    "javascript",
+    "vanilla-js"
+  ],
+  "author": "Equipe EcoTrip",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ecotrip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ecotrip/issues"
+  },
+  "homepage": "https://github.com/your-username/ecotrip#readme",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

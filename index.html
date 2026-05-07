@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Impacto Ambiental</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" role="banner">
+        <div class="hero__content">
+          <span class="eyebrow">Impacto Ambiental</span>
+          <h1>Calculadora de CO₂ para viagens</h1>
+          <p>
+            Estime emissões de carbono por modo de transporte e escolha opções mais
+            sustentáveis em cada trajeto.
+          </p>
+        </div>
+      </header>
+
+      <main class="content" id="main-content">
+        <section class="calculator-card" aria-labelledby="calculator-title">
+          <div class="card-header">
+            <p class="card-tag">Simulação inteligente</p>
+            <h2 id="calculator-title">Preencha os dados</h2>
+          </div>
+
+          <form class="travel-form" novalidate>
+            <fieldset>
+              <legend class="visually-hidden">Formulário de cálculo de emissão</legend>
+
+              <label class="input-group">
+                <span>Distância (km)</span>
+                <input
+                  type="number"
+                  name="distance"
+                  min="1"
+                  step="0.1"
+                  placeholder="Ex: 120"
+                  aria-label="Distância em quilômetros"
+                  required
+                />
+              </label>
+
+              <label class="input-group">
+                <span>Transporte</span>
+                <select name="transport" aria-label="Tipo de transporte" required>
+                  <option value="">Selecione</option>
+                  <option value="car">Carro</option>
+                  <option value="bus">Ônibus</option>
+                  <option value="train">Trem</option>
+                  <option value="airplane">Avião</option>
+                  <option value="bicycle">Bicicleta</option>
+                  <option value="walking">Caminhada</option>
+                </select>
+              </label>
+
+              <button type="submit" class="btn btn-primary">
+                Calcular emissão
+              </button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="result-card" aria-live="polite" aria-labelledby="result-title">
+          <div class="card-header">
+            <p class="card-tag">Resultado</p>
+            <h2 id="result-title">Emissão estimada</h2>
+          </div>
+
+          <div class="result-panel">
+            <p class="result-value">- kg CO₂</p>
+            <p class="result-note">
+              Insira as informações acima para ver o impacto da viagem.
+            </p>
+          </div>
+        </section>
+
+        <section class="history-card" aria-labelledby="history-title">
+          <div class="card-header">
+            <p class="card-tag">Histórico</p>
+            <h2 id="history-title">Cálculos recentes</h2>
+          </div>
+
+          <div class="history-panel">
+            <button type="button" class="btn btn-secondary history-toggle">
+              Mostrar histórico
+            </button>
+            <div class="history-list" hidden>
+              <p class="history-empty">Nenhum cálculo realizado ainda.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="insight-grid">
+          <article class="info-card">
+            <h3>Reduza seu impacto</h3>
+            <p>
+              Modos coletivos e ativos tendem a gerar menos carbono. Pequenas
+              mudanças fazem grande diferença.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Visão clara</h3>
+            <p>
+              Compare viagens com dados simples e visualize rapidamente quais são as
+              opções mais sustentáveis.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/app.js" type="module" defer></script>
+  </body>
+</html>
